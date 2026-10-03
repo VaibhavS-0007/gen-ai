@@ -1,0 +1,123 @@
+from langchain_huggingface import ChatHuggingFace,HuggingFacePipeline
+llm=HuggingFacePipeline.from_model_id (
+    model_id="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        task="text-generation",
+        pipeline_kwargs={
+            # "max_new_tokens":1000
+        }
+
+    
+
+ )
+
+model=ChatHuggingFace(llm=llm)
+
+responce=model.invoke("waht is c lang ?")
+print(responce.content)
+
+
+
+'''aiohappyeyeballs         2.7.1
+aiohttp                  3.14.3
+aiosignal                1.4.0
+annotated-doc            0.0.5
+annotated-types          0.8.0
+anyio                    4.15.1
+attrs                    26.1.0
+certifi                  2026.7.22
+cffi                     2.1.1
+charset-normalizer       3.5.1
+click                    8.5.0
+colorama                 0.4.6
+cryptography             50.0.1
+distro                   1.9.0
+faiss-cpu                1.15.1
+fastapi                  0.141.1
+filelock                 4.0.9
+filetype                 1.2.0
+frozenlist               1.8.0
+fsspec                   2026.9.0
+gen-ai                   0.1.0     C:\Users\sawan\Desktop\Python\Code\Python\gen ai
+google-auth              2.59.0
+google-genai             2.25.0
+groq                     0.37.1
+h11                      0.16.0
+hf-xet                   1.6.0
+httpcore                 1.0.9
+httpcore2                2.13.1
+httpx                    0.28.1
+httpx-sse                0.4.3
+httpx2                   2.13.1
+huggingface-hub          1.33.0
+idna                     3.20
+jinja2                   3.1.6
+jiter                    0.17.0
+jsonpatch                1.33
+jsonpointer              3.1.1
+langchain                1.4.3
+langchain-classic        1.0.8
+langchain-community      0.4.2
+langchain-core           1.6.5
+langchain-google-genai   4.4.0
+langchain-groq           1.1.3
+langchain-huggingface    1.2.2
+langchain-mistralai      1.1.6
+langchain-ollama         1.1.0
+langchain-openai         1.6.6
+langchain-protocol       0.0.19
+langchain-text-splitters 1.1.2
+langgraph                1.2.12
+langgraph-checkpoint     4.2.0
+langgraph-prebuilt       1.1.0
+langgraph-sdk            0.4.5
+langsmith                0.14.1
+markdown-it-py           4.2.0
+markupsafe               3.0.4
+mdurl                    0.1.2
+mpmath                   1.3.0
+multidict                6.9.1
+networkx                 3.7
+numpy                    2.5.3
+ollama                   0.6.3
+openai                   3.20.0
+orjson                   3.12.0
+ormsgpack                1.12.2
+packaging                26.3
+propcache                0.5.4
+pyasn1                   0.6.4
+pyasn1-modules           0.4.2
+pycparser                3.0
+pydantic                 2.13.5
+pydantic-core            2.46.5
+pydantic-settings        2.15.0
+pygments                 2.21.0
+python-dotenv            1.2.3
+pyyaml                   6.0.3
+regex                    2026.9.29
+requests                 2.34.2
+requests-toolbelt        1.0.0
+rich                     15.0.0
+safetensors              0.8.0
+setuptools               84.0.0
+shellingham              1.5.4
+sniffio                  1.3.1
+sqlalchemy               2.1.1
+starlette                1.7.0
+sympy                    1.14.0
+tenacity                 9.1.4
+tiktoken                 0.14.0
+tokenizers               0.23.2
+torch                    2.14.1
+tqdm                     4.70.1
+transformers             5.18.0
+truststore               0.10.4
+typer                    0.27.2
+typing-extensions        4.16.0
+typing-inspection        0.4.4
+urllib3                  2.8.0
+uuid-utils               0.17.1
+uvicorn                  0.54.0
+websockets               16.1.1
+xxhash                   4.0.1
+yarl                     1.25.1
+zstandard                0.25.0'''

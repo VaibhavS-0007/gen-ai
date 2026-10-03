@@ -1,0 +1,19 @@
+[project]
+name = "gen-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vaibhav Sawant", email = "sawantvaibhav421@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain[huggingface]>=1.4.3",
+]
+
+[project.scripts]
+gen-ai = "gen_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
